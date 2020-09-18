@@ -6,8 +6,6 @@ pipeline {
       yamlFile 'build-pod.yaml'  // path to the pod definition relative to the root of our project 
       defaultContainer 'maven'  // define a default container if more than a few stages use it, will default to jnlp container
     }
-  }
-  
   stages {
     stage('scm'){
        git 'https://github.com/ametgud4u/game-of-life.git'
