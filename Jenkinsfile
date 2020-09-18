@@ -9,8 +9,9 @@ pipeline {
   }
   stages {
     stage('scm'){
-      step {
+      steps {
         git 'https://github.com/ametgud4u/game-of-life.git'
+    }
     }
     stage('Build') {
       steps {  // no container directive is needed as the maven container is the default
@@ -26,4 +27,4 @@ pipeline {
       }
     }
   }
-  }}
+  }
