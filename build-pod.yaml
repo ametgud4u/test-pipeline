@@ -11,9 +11,9 @@ spec:
      resources:  # limits the resources your build contaienr
         requests:
           memory: "2Gi"
-          cpu: "2000m"
+          cpu: "2500m"
         limits:
-          memory: "1Gi"
+          memory: "2Gi"
         ephemeral-storage: "4Gi"
         limits:
         ephemeral-storage: "8Gi"
