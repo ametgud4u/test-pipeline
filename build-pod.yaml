@@ -10,8 +10,8 @@ spec:
      imagePullPolicy: Always # use cache or pull image for agent
      resources:  # limits the resources your build contaienr
         requests:
-          memory: "2Gi"
-          cpu: "2500m"
+          memory: "3Gi"
+          cpu: "3000m"
         limits:
           memory: "2Gi"
         ephemeral-storage: "4Gi"
