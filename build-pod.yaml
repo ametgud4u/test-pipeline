@@ -8,18 +8,7 @@ spec:
       imagePullPolicy: Always # use cache or pull image for agent
       resources:  # limits the resources your build contaienr
         requests:
-          memory: "1Gi"
-          cpu: "500m"
+          memory: "4Gi"
+          cpu: "1000m"
         limits:
-          memory: "1Gi"
-    - name: docker
-      image: docker:latest
-      command: ["tail", "-f", "/dev/null"]
-      imagePullPolicy: Always
-      volumeMounts:
-        - name: docker
-          mountPath: /var/run/docker.sock # We use the k8s host docker engine
-  volumes:
-    - name: docker
-      hostPath:
-        path: /var/run/docker.sock
+          memory: "2Gi"
