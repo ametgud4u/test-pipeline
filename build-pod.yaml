@@ -9,6 +9,6 @@ spec:
       resources:  # limits the resources your build contaienr
         requests:
           memory: "4Gi"
-          cpu: "2000m"
+          cpu: "1000m"
         limits:
           memory: "2Gi"
